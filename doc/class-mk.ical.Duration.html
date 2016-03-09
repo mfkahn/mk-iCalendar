@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class mk\ical\Duration</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-mk.html">
+						mk<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-mk.ical.html">
+						ical					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-mk.ical.Duration.html">Duration</a></li>
+				<li><a href="class-mk.ical.Factory.html">Factory</a></li>
+				<li><a href="class-mk.ical.Freq.html">Freq</a></li>
+				<li><a href="class-mk.ical.iCal.html">iCal</a></li>
+				<li><a href="class-mk.ical.Line.html">Line</a></li>
+				<li><a href="class-mk.ical.Parser.html">Parser</a></li>
+				<li><a href="class-mk.ical.Query.html">Query</a></li>
+				<li><a href="class-mk.ical.Recurrence.html">Recurrence</a></li>
+				<li><a href="class-mk.ical.VCalendar.html">VCalendar</a></li>
+				<li><a href="class-mk.ical.VEvent.html">VEvent</a></li>
+				<li><a href="class-mk.ical.VTimeZone.html">VTimeZone</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-mk.ical.html" title="Summary of mk\ical"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Duration</h1>
+
+
+	<div class="description">
+	<p>A class for calculating how many seconds a duration-string is</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-mk.html">mk</a>\<a href="namespace-mk.ical.html">ical</a><br>
+		
+
+				<b>License:</b>
+				<a href="http://creativecommons.org/licenses/by-sa/2.5/dk/deed.en_GB">CC-BY-SA-DK</a><br>
+				<b>Author:</b>
+				Morten Fangel (C) 2008<br>
+				<b>Author:</b>
+				Michael Kahn (C) 2013<br>
+			<b>Located at</b> <a href="source-class-mk.ical.Duration.html#6-60" title="Go to source code">ical/Duration.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-mk.ical.Duration.html#17-50" title="Go to source code">__construct</a>( <span> <var>$duration</var></span> )</code>
+
+		<div class="description short">
+			<p>Constructs a new mk\ical\Duration from a duration-rule.
+The basic build-up of DURATIONs are:
+ (["+"] / "-") "P" (dur-date / dur-date + "T" + dur-time / dur-time / dur-week)
+Is solved via a really fugly reg-exp with way to many ()'s..</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructs a new mk\ical\Duration from a duration-rule.
+The basic build-up of DURATIONs are: (["+"] / "-") "P" (dur-date / dur-date + "T" + dur-time / dur-time / dur-week)
+Is solved via a really fugly reg-exp with way to many ()'s..</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$duration</var></dt>
+					<dd>string</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDuration" id="_getDuration">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDuration">#</a>
+		<code><a href="source-class-mk.ical.Duration.html#52-59" title="Go to source code">getDuration</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the duration in seconds</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the duration in seconds</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="dur" id="$dur">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.Duration.html#15" title="Go to source code"><var>$dur</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$dur" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

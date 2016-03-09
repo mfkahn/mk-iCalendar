@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class mk\ical\VEvent</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-mk.html">
+						mk<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-mk.ical.html">
+						ical					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-mk.ical.Duration.html">Duration</a></li>
+				<li><a href="class-mk.ical.Factory.html">Factory</a></li>
+				<li><a href="class-mk.ical.Freq.html">Freq</a></li>
+				<li><a href="class-mk.ical.iCal.html">iCal</a></li>
+				<li><a href="class-mk.ical.Line.html">Line</a></li>
+				<li><a href="class-mk.ical.Parser.html">Parser</a></li>
+				<li><a href="class-mk.ical.Query.html">Query</a></li>
+				<li><a href="class-mk.ical.Recurrence.html">Recurrence</a></li>
+				<li><a href="class-mk.ical.VCalendar.html">VCalendar</a></li>
+				<li class="active"><a href="class-mk.ical.VEvent.html">VEvent</a></li>
+				<li><a href="class-mk.ical.VTimeZone.html">VTimeZone</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-mk.ical.html" title="Summary of mk\ical"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class VEvent</h1>
+
+
+	<div class="description">
+	<p>The wrapper for vevents. Will reveal a unified and simple api for
+the events, which include always finding a start and end (except
+when no end or duration is given) and checking if the event is
+blocking or similar.</p>
+
+<p>Will apply the specified timezone to timestamps if a tzid is
+specified</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-mk.html">mk</a>\<a href="namespace-mk.ical.html">ical</a><br>
+		
+
+				<b>License:</b>
+				<a href="http://creativecommons.org/licenses/by-sa/2.5/dk/deed.en_GB">CC-BY-SA-DK</a><br>
+				<b>Author:</b>
+				Morten Fangel (C) 2008<br>
+				<b>Author:</b>
+				Michael Kahn (C) 2013<br>
+			<b>Located at</b> <a href="source-class-mk.ical.VEvent.html#5-312" title="Go to source code">ical/VEvent.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#43-135" title="Go to source code">__construct</a>( <span><code><a href="class-mk.ical.Line.html">mk\ical\Line</a>[]</code> <var>$data</var></span>, <span><code><a href="class-mk.ical.iCal.html">mk\ical\iCal</a></code> <var>$ical</var></span> )</code>
+
+		<div class="description short">
+			<p>Constructs a new mk\ical\VEvent. Needs the iCal
+supplied so it can query for timezones.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructs a new mk\ical\VEvent. Needs the iCal
+supplied so it can query for timezones.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+					<dt><var>$ical</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFrequency" id="_getFrequency">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-mk.ical.Freq.html">mk\ical\Freq</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFrequency">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#137-150" title="Go to source code">getFrequency</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the Event Occurrences Iterator (if recurrence set)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the Event Occurrences Iterator (if recurrence set)</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-mk.ical.Freq.html">mk\ical\Freq</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUID" id="_getUID">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUID">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#152-159" title="Go to source code">getUID</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the UID of the event</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the UID of the event</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSummary" id="_getSummary">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSummary">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#161-168" title="Go to source code">getSummary</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the summary (or null if none is given) of the event</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the summary (or null if none is given) of the event</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDescription" id="_getDescription">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDescription">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#170-177" title="Go to source code">getDescription</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the description (or null if none is given) of the event</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the description (or null if none is given) of the event</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLocation" id="_getLocation">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLocation">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#179-186" title="Go to source code">getLocation</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the location (or null if none is given) of the event</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the location (or null if none is given) of the event</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isBlocking" id="_isBlocking">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isBlocking">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#188-195" title="Go to source code">isBlocking</a>( )</code>
+
+		<div class="description short">
+			<p>Returns true if the event is blocking (ie not transparent)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns true if the event is blocking (ie not transparent)</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isConfirmed" id="_isConfirmed">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isConfirmed">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#197-208" title="Go to source code">isConfirmed</a>( )</code>
+
+		<div class="description short">
+			<p>Returns true if the event is confirmed</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns true if the event is confirmed</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isWholeDay" id="_isWholeDay">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isWholeDay">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#210-222" title="Go to source code">isWholeDay</a>( )</code>
+
+		<div class="description short">
+			<p>Returns true if duration is multiple of 86400</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns true if duration is multiple of 86400</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStart" id="_getStart">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStart">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#224-231" title="Go to source code">getStart</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the timestamp for the beginning of the event</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the timestamp for the beginning of the event</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEnd" id="_getEnd">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEnd">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#233-240" title="Go to source code">getEnd</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the timestamp for the end of the event</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the timestamp for the end of the event</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRangeEnd" id="_getRangeEnd">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRangeEnd">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#242-249" title="Go to source code">getRangeEnd</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the timestamp for the end of the last event</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the timestamp for the end of the last event</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDuration" id="_getDuration">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDuration">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#251-258" title="Go to source code">getDuration</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the duration of this event in seconds</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the duration of this event in seconds</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProperty" id="_getProperty">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProperty">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#260-274" title="Go to source code">getProperty</a>( <span>string <var>$prop</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the given property of the event.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the given property of the event.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$prop</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLineTimeZone" id="_setLineTimeZone">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLineTimeZone">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#276-293" title="Go to source code">setLineTimeZone</a>( <span><code><a href="class-mk.ical.Line.html">mk\ical\Line</a></code> <var>$line</var></span> )</code>
+
+		<div class="description short">
+			<p>Set default timezone (temporary) to get timestamps</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set default timezone (temporary) to get timestamps</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimestamp" id="_getTimestamp">
+
+		<td class="attributes"><code>
+			 protected 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimestamp">#</a>
+		<code><a href="source-class-mk.ical.VEvent.html#295-311" title="Go to source code">getTimestamp</a>( <span><code><a href="class-mk.ical.Line.html">mk\ical\Line</a></code> <var>$line</var></span>, <span><code><a href="class-mk.ical.iCal.html">mk\ical\iCal</a></code> <var>$ical</var></span> )</code>
+
+		<div class="description short">
+			<p>Calculates the timestamp from a DT line.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Calculates the timestamp from a DT line.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$line</var></dt>
+					<dd>mk\ical\Line</dd>
+					<dt><var>$ical</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="DEFAULT_CONFIRMED" id="DEFAULT_CONFIRMED">
+
+		<td class="attributes"><code>boolean</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-mk.ical.VEvent.html#20" title="Go to source code"><b>DEFAULT_CONFIRMED</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#DEFAULT_CONFIRMED" class="anchor">#</a>
+				<code><span class="php-keyword1">true</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="uid" id="$uid">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#22" title="Go to source code"><var>$uid</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$uid" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="start" id="$start">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#24" title="Go to source code"><var>$start</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$start" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="end" id="$end">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#25" title="Go to source code"><var>$end</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$end" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="summary" id="$summary">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#27" title="Go to source code"><var>$summary</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$summary" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="description" id="$description">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#28" title="Go to source code"><var>$description</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$description" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="location" id="$location">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#29" title="Go to source code"><var>$location</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$location" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="laststart" id="$laststart">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#31" title="Go to source code"><var>$laststart</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$laststart" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="lastend" id="$lastend">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#32" title="Go to source code"><var>$lastend</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$lastend" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="recurrence" id="$recurrence">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#34" title="Go to source code"><var>$recurrence</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$recurrence" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="recurex" id="$recurex">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#35" title="Go to source code"><var>$recurex</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$recurex" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="excluded" id="$excluded">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#36" title="Go to source code"><var>$excluded</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$excluded" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="added" id="$added">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#37" title="Go to source code"><var>$added</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$added" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="freq" id="$freq">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#39" title="Go to source code"><var>$freq</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$freq" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="data" id="$data">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-mk.ical.VEvent.html#41" title="Go to source code"><var>$data</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$data" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

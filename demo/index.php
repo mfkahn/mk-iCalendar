@@ -1,9 +1,9 @@
 <?php
 
-require_once '../intouch/ical/iCal.php';
+require_once '../mk/ical/iCal.php';
 
-use intouch\ical\iCal;
-use intouch\ical\Query;
+use mk\ical\iCal;
+use mk\ical\Query;
 
 function dump_t($x)
 {
