@@ -26,6 +26,16 @@ A simple example :
  }
 ```
 
+Demo server:
+
+```
+cd <project root>
+sh demo-server.sh
+```
+
+The open your browser to [http://localhost:4000]()
+
+
 ## Development
 
 ### Testing
@@ -75,4 +85,4 @@ These iCal keywords are not supported for the moment :
 Also, multiple RRULE could be specified for an event,
 but that is not the case for most calendar applications
 
-To get more information about ical format and rules, see http://www.ietf.org/rfc/rfc2445.txt
+To get more information about ical format and rules, see [http://www.ietf.org/rfc/rfc2445.txt]()
